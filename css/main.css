@@ -1,0 +1,580 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Lysdora's custom styles
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Custom Fonts
+   font-family: 'Roboto', sans-serif;
+   font-family: 'Roboto Slab', serif;
+   font-family: 'Roboto Condensed', sans-serif;
+
+   Custom Color
+   f7f7f7: background
+   1abb9c: active nav item
+   color: #f3f3f3 : heading 1
+   color: #a8a8a8; ; subheading 1
+   color: #4e4e4e; : heading icon
+   color: #616161; : para icon
+   background-color: #f7f7f7; : lasted work title-author
+   color: #a1a1a1; : quotation-title
+   
+   ========================================================================== */
+
+
+/* ==========================================================================
+   GENERAL STYLES
+   ========================================================================== */
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 100%;
+}
+
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+p,
+li,
+h1,
+h2,
+h4 {
+    color: #4e4e4e;
+}
+
+body {
+    background: #f7f7f7;
+}
+
+.wrapper {
+    width: 96%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+
+/* ==========================================================================
+  HEADER
+   ========================================================================== */
+
+header {
+    background: #e5e5e5;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    text-indent: -10000px;
+    background: url(../img/logo.png) no-repeat;
+    width: 130px;
+    float: left;
+}
+
+header nav {
+    float: right;
+}
+
+header nav h2 {
+    line-height: 0;
+    margin: 0;
+    text-indent: -10000px;
+}
+
+header nav li {
+    list-style-type: none;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+header nav li a {
+    text-decoration: none;
+    color: #4e4e4e;
+    text-transform: uppercase;
+    font-weight: 700px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1rem;
+    /* 16px = 1rem (base) */
+    line-height: 35px;
+}
+
+.current {
+    color: #1abb9c;
+}
+
+
+/*
+header:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+*/
+
+
+/* Banner */
+
+#main-banner img {
+    width: 100%;
+    filter: grayscale(20%);
+}
+
+#main-banner {
+    max-height: 500px;
+    overflow: hidden;
+}
+
+
+/* ==========================================================================
+  MAIN
+   ========================================================================== */
+
+
+/* SECTION SELLING POINTS */
+
+#selling-points {
+    margin-top: 60px;
+}
+
+#selling-points li {
+    float: left;
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+    list-style-type: none;
+    line-height: 1.6rem;
+}
+
+#selling-points li img {
+    width: 90px;
+    height: auto;
+}
+
+#selling-points h3 {
+    font-family: 'Roboto Slab', serif;
+    color: #4e4e4e;
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+#sellings-point p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: #616161;
+    line-height: 1.2rem;
+}
+
+
+/* SECTION LATEST WORKS */
+
+#latest-work {
+    padding-top: 30px;
+    margin-top: 30px;
+    border-top: 2px solid #f7f7f7;
+}
+
+#latest-work h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+#latest-work li {
+    width: 32%;
+    float: left;
+    list-style-type: none;
+}
+
+#latest-work img {
+    width: 100%;
+}
+
+#latest-work li:nth-child(2) {
+    margin: 0 2%;
+}
+
+#latest-work h3 {
+    font-family: 'Roboto Slab', serif;
+    color: #4e4e4e;
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+.tags {
+    font-family: 'Roboto Slab', serif;
+    color: #a8a8a8;
+    font-size: 0.8125rem;
+    font-weight: 400;
+}
+
+#latest-work p {
+    font-size: 0.875rem;
+    color: #5c5c5c;
+    font-weight: 400;
+    line-height: 1.4rem;
+}
+
+
+/* quote Section */
+
+#quote {
+    margin-top: 60px;
+    width: 60%;
+    padding: 40px 20%;
+    background: url(../img/quote.png) no-repeat center 10px;
+    background-color: #efefef;
+    color: #a1a1a1;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    text-align: center;
+}
+
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+footer {
+    background: #202020;
+    padding: 30px 0;
+    border-top: 10px solid #151515;
+}
+
+footer h4 {
+    margin: 0;
+    color: #6c6c6c;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+}
+
+footer ul {
+    float: left;
+    width: 25%;
+    list-style-type: none;
+}
+
+footer li {
+    color: #cacaca;
+    font-size: 0.875rem;
+    line-height: 1.4rem;
+    width: 80%;
+    margin: 20px 0;
+}
+
+footer li.tw {
+    padding-left: 20px;
+    background: url(../img/twitter.png) no-repeat left 6px;
+}
+
+#copyright p{
+    clear: both;
+    color: #cacaca;
+    padding-top: 30px;
+    margin-top: 30px;
+    float: left;
+    width: 100%;  
+    font-size: 0.875rem;
+    text-align: center;
+    line-height: 1.3rem;
+    
+    
+}
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+
+/* Tablet style */
+/* Tablet style */
+@media screen and (max-width: 960px) {
+    #selling-points li {
+        width: 40%;
+        padding: 0 5%;
+        margin: 20px 0;
+    }
+
+    footer ul {
+        width: 50%;
+    }
+
+    #quote {
+        width: 90%;
+        padding: 40px 5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header nav {
+        float:none;
+
+    }
+
+    header nav li {
+        margin-left: 0;
+        width: 16.66%;
+        text-align: center;
+        font-size: 14px;
+
+    }
+
+    header h1.logo {
+        float:none;
+        margin: 0 auto;
+    }
+
+    #latest-work li {
+        width: 60%;
+        margin: 30px 20% !important;
+        float: none;
+    }
+
+    #latest-work h2 {
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    #selling-points li {
+        width: 80%;
+        padding: 0 10%;
+        margin: 20px 0;
+    }
+
+    #latest-work li {
+        width: 80%;
+        margin: 30px 10% !important;
+    }
+
+    #quote {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    footer ul {
+        width: 100%;
+        float: none;
+        border-top: 2px solid #333;
+    }
+      header nav li {
+        float:none;
+        width: 100%;
+        margin: 0;
+    }
+
+    header nav {
+        background: #555;
+    }
+
+    header .wrapper {
+        padding: 0;
+        width: 100%;
+    }
+    header {
+        padding-bottom: 0;
+
+    }
+
+    header nav li a {
+        display: block;
+        text-align: center;
+        padding: 2px;
+        color: #999;
+        border-top: 1px solid #4f4f4f;
+    }
+
+    #burger-nav {
+        width: 100%;
+        height: 40px;
+        background: url(../img/burger.png) no-repeat 98% center;
+        cursor: pointer;
+    }
+
+    header nav ul {
+        height: 0;
+        overflow: hidden;
+    }
+
+    header nav ul.open {
+        height: auto;
+    }
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
